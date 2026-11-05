@@ -1,0 +1,121 @@
+{
+  "rows": 8000,
+  "reference_rows": 6400,
+  "max_psi": 0.9882574665790824,
+  "n_minor_or_worse": 12,
+  "n_major": 9,
+  "recommendation": "Review this batch before treating scores as comparable to training. At least one feature has a major marginal shift. This check does not retrain the model.",
+  "features": [
+    {
+      "feature": "tenure_months",
+      "kind": "numeric",
+      "psi": 0.9882574665790824,
+      "status": "major_shift"
+    },
+    {
+      "feature": "monthly_charges",
+      "kind": "numeric",
+      "psi": 0.9497235959725792,
+      "status": "major_shift"
+    },
+    {
+      "feature": "support_tickets_90d",
+      "kind": "numeric",
+      "psi": 0.7649308218478188,
+      "status": "major_shift"
+    },
+    {
+      "feature": "avg_monthly_gb",
+      "kind": "numeric",
+      "psi": 0.5920177683165465,
+      "status": "major_shift"
+    },
+    {
+      "feature": "satisfaction_score",
+      "kind": "numeric",
+      "psi": 0.5132151770304864,
+      "status": "major_shift"
+    },
+    {
+      "feature": "contract",
+      "kind": "categorical",
+      "psi": 0.33854659796015285,
+      "status": "major_shift"
+    },
+    {
+      "feature": "payment_method",
+      "kind": "categorical",
+      "psi": 0.30857861579674917,
+      "status": "major_shift"
+    },
+    {
+      "feature": "total_charges",
+      "kind": "numeric",
+      "psi": 0.3038965873856962,
+      "status": "major_shift"
+    },
+    {
+      "feature": "autopay",
+      "kind": "categorical",
+      "psi": 0.2673661999688414,
+      "status": "major_shift"
+    },
+    {
+      "feature": "tech_support",
+      "kind": "categorical",
+      "psi": 0.1488654631033246,
+      "status": "minor_shift"
+    },
+    {
+      "feature": "online_security",
+      "kind": "categorical",
+      "psi": 0.13772691951385008,
+      "status": "minor_shift"
+    },
+    {
+      "feature": "internet_service",
+      "kind": "categorical",
+      "psi": 0.1302540616312524,
+      "status": "minor_shift"
+    },
+    {
+      "feature": "paperless_billing",
+      "kind": "categorical",
+      "psi": 0.09485065200210013,
+      "status": "stable"
+    },
+    {
+      "feature": "streaming_tv",
+      "kind": "categorical",
+      "psi": 0.05178943187052554,
+      "status": "stable"
+    },
+    {
+      "feature": "region",
+      "kind": "categorical",
+      "psi": 0.00013216235466957635,
+      "status": "stable"
+    },
+    {
+      "feature": "senior_citizen",
+      "kind": "categorical",
+      "psi": 6.527222776100122e-05,
+      "status": "stable"
+    },
+    {
+      "feature": "dependents",
+      "kind": "categorical",
+      "psi": 2.812092992151253e-06,
+      "status": "stable"
+    },
+    {
+      "feature": "partner",
+      "kind": "categorical",
+      "psi": 1.5654036651570932e-06,
+      "status": "stable"
+    }
+  ],
+  "scored_at": "2026-11-05T21:05:44+00:00",
+  "current": "data/churn_shifted.csv",
+  "reference": "model_registry alias=champion"
+}

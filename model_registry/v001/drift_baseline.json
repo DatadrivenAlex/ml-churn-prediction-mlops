@@ -1,0 +1,310 @@
+{
+  "rows": 6400,
+  "n_bins": 10,
+  "features": {
+    "tenure_months": {
+      "kind": "numeric",
+      "edges": [
+        "-inf",
+        7.0,
+        11.0,
+        15.0,
+        18.0,
+        22.0,
+        27.0,
+        32.0,
+        39.0,
+        50.0,
+        "inf"
+      ],
+      "expected": [
+        0.07609375,
+        0.1003125,
+        0.1090625,
+        0.08734375,
+        0.108125,
+        0.11171875,
+        0.09765625,
+        0.10328125,
+        0.10546875,
+        0.1009375
+      ]
+    },
+    "monthly_charges": {
+      "kind": "numeric",
+      "edges": [
+        "-inf",
+        27.398,
+        35.83,
+        46.837,
+        54.69,
+        62.03,
+        69.15400000000001,
+        74.953,
+        80.7,
+        87.01,
+        "inf"
+      ],
+      "expected": [
+        0.1,
+        0.09984375,
+        0.10015625,
+        0.09984375,
+        0.10015625,
+        0.1,
+        0.1,
+        0.09984375,
+        0.1,
+        0.10015625
+      ]
+    },
+    "total_charges": {
+      "kind": "numeric",
+      "edges": [
+        "-inf",
+        345.248,
+        547.0740000000001,
+        723.242,
+        957.5260000000001,
+        1201.625,
+        1470.9060000000002,
+        1823.5720000000001,
+        2317.958000000001,
+        3157.750000000001,
+        "inf"
+      ],
+      "expected": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "support_tickets_90d": {
+      "kind": "numeric",
+      "edges": [
+        "-inf",
+        1.0,
+        2.0,
+        "inf"
+      ],
+      "expected": [
+        0.340625,
+        0.36984375,
+        0.28953125
+      ]
+    },
+    "avg_monthly_gb": {
+      "kind": "numeric",
+      "edges": [
+        "-inf",
+        1.5,
+        2.7,
+        61.6,
+        78.6,
+        97.6,
+        154.04000000000005,
+        190.53000000000003,
+        217.4,
+        245.41000000000005,
+        "inf"
+      ],
+      "expected": [
+        0.0990625,
+        0.098125,
+        0.10265625,
+        0.0996875,
+        0.099375,
+        0.10109375,
+        0.1,
+        0.09984375,
+        0.10015625,
+        0.1
+      ]
+    },
+    "satisfaction_score": {
+      "kind": "numeric",
+      "edges": [
+        "-inf",
+        2.0,
+        3.0,
+        4.0,
+        "inf"
+      ],
+      "expected": [
+        0.075,
+        0.1478125,
+        0.285,
+        0.4921875
+      ]
+    },
+    "contract": {
+      "kind": "categorical",
+      "categories": [
+        "month_to_month",
+        "one_year",
+        "two_year"
+      ],
+      "expected": [
+        0.5471875,
+        0.23609375,
+        0.21671875,
+        0.0
+      ]
+    },
+    "internet_service": {
+      "kind": "categorical",
+      "categories": [
+        "dsl",
+        "fiber",
+        "none"
+      ],
+      "expected": [
+        0.34265625,
+        0.44484375,
+        0.2125,
+        0.0
+      ]
+    },
+    "payment_method": {
+      "kind": "categorical",
+      "categories": [
+        "bank_transfer",
+        "credit_card",
+        "electronic_check",
+        "mailed_check"
+      ],
+      "expected": [
+        0.21921875,
+        0.22359375,
+        0.33796875,
+        0.21921875,
+        0.0
+      ]
+    },
+    "online_security": {
+      "kind": "categorical",
+      "categories": [
+        "no",
+        "no_internet",
+        "yes"
+      ],
+      "expected": [
+        0.4959375,
+        0.2125,
+        0.2915625,
+        0.0
+      ]
+    },
+    "tech_support": {
+      "kind": "categorical",
+      "categories": [
+        "no",
+        "no_internet",
+        "yes"
+      ],
+      "expected": [
+        0.5228125,
+        0.2125,
+        0.2646875,
+        0.0
+      ]
+    },
+    "streaming_tv": {
+      "kind": "categorical",
+      "categories": [
+        "no",
+        "no_internet",
+        "yes"
+      ],
+      "expected": [
+        0.4659375,
+        0.2125,
+        0.3215625,
+        0.0
+      ]
+    },
+    "region": {
+      "kind": "categorical",
+      "categories": [
+        "east",
+        "north",
+        "south",
+        "west"
+      ],
+      "expected": [
+        0.248125,
+        0.2509375,
+        0.25234375,
+        0.24859375,
+        0.0
+      ]
+    },
+    "paperless_billing": {
+      "kind": "categorical",
+      "categories": [
+        "0",
+        "1"
+      ],
+      "expected": [
+        0.4275,
+        0.5725,
+        0.0
+      ]
+    },
+    "senior_citizen": {
+      "kind": "categorical",
+      "categories": [
+        "0",
+        "1"
+      ],
+      "expected": [
+        0.8446875,
+        0.1553125,
+        0.0
+      ]
+    },
+    "partner": {
+      "kind": "categorical",
+      "categories": [
+        "0",
+        "1"
+      ],
+      "expected": [
+        0.52125,
+        0.47875,
+        0.0
+      ]
+    },
+    "dependents": {
+      "kind": "categorical",
+      "categories": [
+        "0",
+        "1"
+      ],
+      "expected": [
+        0.7865625,
+        0.2134375,
+        0.0
+      ]
+    },
+    "autopay": {
+      "kind": "categorical",
+      "categories": [
+        "0",
+        "1"
+      ],
+      "expected": [
+        0.42234375,
+        0.57765625,
+        0.0
+      ]
+    }
+  }
+}
