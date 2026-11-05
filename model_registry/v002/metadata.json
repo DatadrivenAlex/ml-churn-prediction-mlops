@@ -1,0 +1,43 @@
+{
+  "model_name": "gradient_boosting",
+  "algorithm": "sklearn.ensemble._gb.GradientBoostingClassifier",
+  "seed": 42,
+  "trained_at": "2026-11-05T21:02:58+00:00",
+  "threshold": 0.2,
+  "hyperparameters": {
+    "n_estimators": 120,
+    "learning_rate": 0.08,
+    "max_depth": 3,
+    "subsample": 0.9
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.7102861045878037,
+    "cv_roc_auc_std": 0.008848153962239834,
+    "cv_roc_auc_folds": [
+      0.7147511166367362,
+      0.7132315697379933,
+      0.7216197755982257,
+      0.7063322128593574,
+      0.695495848106706
+    ],
+    "oof_f1": 0.4299363057324841,
+    "oof_precision": 0.32425940752602084,
+    "oof_recall": 0.6377952755905512,
+    "test_roc_auc": 0.7146533031132566,
+    "test_f1": 0.42735042735042733,
+    "test_precision": 0.32362459546925565,
+    "test_recall": 0.6289308176100629,
+    "test_positive_rate": 0.38625,
+    "test_brier": 0.1435325200456038,
+    "tp": 200.0,
+    "fp": 418.0,
+    "tn": 864.0,
+    "fn": 118.0
+  },
+  "train_rows": 6400,
+  "test_rows": 1600,
+  "tracking_run_id": "20261105T2102580000-gradient_boosting-11c20701",
+  "target": "churn",
+  "version": "v002",
+  "registered_at": "2026-11-05T21:02:58+00:00"
+}

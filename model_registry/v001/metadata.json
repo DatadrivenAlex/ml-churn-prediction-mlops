@@ -1,0 +1,43 @@
+{
+  "model_name": "logistic_regression",
+  "algorithm": "sklearn.linear_model._logistic.LogisticRegression",
+  "seed": 42,
+  "trained_at": "2026-11-05T21:02:51+00:00",
+  "threshold": 0.56,
+  "hyperparameters": {
+    "C": 1.0,
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "solver": "lbfgs"
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.7256619238384676,
+    "cv_roc_auc_std": 0.0012046087209626132,
+    "cv_roc_auc_folds": [
+      0.725656551702967,
+      0.7264853954659176,
+      0.726899817347393,
+      0.7258445764454882,
+      0.7234232782305721
+    ],
+    "oof_f1": 0.4443765281173594,
+    "oof_precision": 0.36313686313686316,
+    "oof_recall": 0.5724409448818898,
+    "test_roc_auc": 0.7337125560494118,
+    "test_f1": 0.4468599033816425,
+    "test_precision": 0.3627450980392157,
+    "test_recall": 0.5817610062893082,
+    "test_positive_rate": 0.31875,
+    "test_brier": 0.21039182157850128,
+    "tp": 185.0,
+    "fp": 325.0,
+    "tn": 957.0,
+    "fn": 133.0
+  },
+  "train_rows": 6400,
+  "test_rows": 1600,
+  "tracking_run_id": "20261105T2102510000-logistic_regression-85496d3d",
+  "target": "churn",
+  "version": "v001",
+  "registered_at": "2026-11-05T21:02:51+00:00"
+}
